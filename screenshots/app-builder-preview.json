@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Catchcraft — traps, corrals, and the hook",
+      "hasCanvas": false,
+      "bodyTextLen": 3796,
+      "bodyTextHash": "a84a6e77c711d1c47f8d958c77121a28d137a65889be4d5e272cec9206198a90",
+      "bodyTextPrefix": "Skip to content Catchcraft Guide Bank Kit A FIELD GUIDE Catch a ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Catchcraft — traps, corrals, and the hook",
+      "hasCanvas": false,
+      "bodyTextLen": 3796,
+      "bodyTextHash": "a84a6e77c711d1c47f8d958c77121a28d137a65889be4d5e272cec9206198a90",
+      "bodyTextPrefix": "Skip to content Catchcraft Guide Bank Kit A FIELD GUIDE Catch a ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
