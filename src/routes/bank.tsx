@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { advise, type Answers, type GearId, type Quarry, type Water, type Window } from "@/data/advise";
-import { btn, btnGhost, Plate } from "@/components/bits";
+import { btn, btnGhost, LawNote, Plate } from "@/components/bits";
 
 export const Route = createFileRoute("/bank")({
   head: () => ({
@@ -21,7 +21,7 @@ const waters: { id: Water; label: string; hint: string }[] = [
 const windows: { id: Window; label: string; hint: string }[] = [
   { id: "hour", label: "About an hour", hint: "Light's going, or you have a short stop." },
   { id: "afternoon", label: "An afternoon", hint: "Time to build something and still tend it." },
-  { id: "overnight", label: "Overnight", hint: "You can set at dusk and come back at dawn." },
+  { id: "overnight", label: "Overnight", hint: "Only if this water allows an unattended device, tagged and checked on its schedule." },
   { id: "tide", label: "A falling tide", hint: "You'll be here while the water leaves." },
 ];
 
@@ -122,8 +122,19 @@ function Bank() {
       <h1 className="mt-2 font-display text-4xl md:text-5xl">What does this water want?</h1>
       <p className="mt-3 max-w-xl text-lg text-ink/80">
         Four questions. A method you can actually build with what's in your pockets, and a runner-up
-        if the first one is a poor fit.
+        if the first one is a poor fit. A match is not permission to set it.
       </p>
+      <div className="mt-4">
+        <LawNote>
+          Before this planner recommends a trap or corral: confirm the rules for this specific
+          water. It can suggest a method from your time and your pockets. It cannot tell you that
+          method is legal where you are standing. Illinois's 2026 fishing information, as one
+          example, allows minnow and crayfish traps only in stated materials and sizes, and an
+          unattended trap must carry the operator's name and address. Hook-and-line devices left
+          set there must be checked at least every 24 hours. Your water can be stricter or
+          entirely different. If the rule is not clear, fish a legal hook.
+        </LawNote>
+      </div>
 
       {result ? (
         <div className="rise mt-8 space-y-6">
@@ -133,10 +144,21 @@ function Bank() {
               This bank is thin. The pick below is the least-bad start, not a promise of fish.
             </p>
           ) : null}
+          {result.lead.method.family !== "hook" ||
+          (result.alt != null && result.alt.method.family !== "hook") ? (
+            <LawNote>
+              Confirm local permission and rules before building or setting this. A match on this
+              page is not permission. Read the current rule for this water — the device, the
+              materials, the species, and whether it may be left unattended. If that rule is not
+              clear, do not build it.
+            </LawNote>
+          ) : null}
           <article className="grid gap-5 md:grid-cols-2">
             <Plate src={result.lead.method.image} alt={result.lead.method.alt} />
             <div>
-              <p className="text-sm font-semibold tracking-wide text-copper uppercase">Start here</p>
+              <p className="text-sm font-semibold tracking-wide text-copper uppercase">
+                {result.lead.method.family === "hook" ? "Start here" : "Possible match — not permission"}
+              </p>
               <h2 className="mt-1 font-display text-4xl">{result.lead.method.name}</h2>
               <ul className="mt-3 space-y-2 text-ink/80">
                 {result.lead.reasons.map((reason) => (
@@ -149,7 +171,7 @@ function Bank() {
                 params={{ methodId: result.lead.method.id }}
                 className={`${btn} mt-5`}
               >
-                Open the build
+                {result.lead.method.family === "hook" ? "Open the build" : "Read the page — confirm the rule first"}
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             </div>

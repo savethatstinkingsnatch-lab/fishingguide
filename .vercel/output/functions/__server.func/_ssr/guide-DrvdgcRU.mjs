@@ -1,9 +1,9 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/guide-vuM60l-L.js
+//#region node_modules/.nitro/vite/services/ssr/assets/guide-DrvdgcRU.js
 var materials = [
 	{
 		id: "pfd",
 		name: "Life jacket (PFD)",
-		note: "In a boat, and when wading deep, swift, or cold water. Kids and non-swimmers wear one at the edge too.",
+		note: "Properly fitted and Coast Guard approved. Wear it when a boat is underway. Federal rules generally require children under 13 to wear one then, with stated exceptions and stricter state rules.",
 		group: "Safety"
 	},
 	{
@@ -161,12 +161,12 @@ var methods = [
 		image: "/photos/bottle.jpg",
 		alt: "A clear plastic bottle minnow trap lying in a shallow creek, funnel neck pointing inward and laced with twine, bread bait in the closed end.",
 		tags: ["minnow"],
-		catches: "Minnows, shiners, small sunfish, and the odd crayfish.",
-		misses: "Bass, trout, and anything wider than the neck. This is a baitfish trap, not a dinner trap, unless small fish are the meal.",
+		catches: "Where a baitfish trap of this kind is legal: minnows and shiners, and sometimes crayfish. Small sunfish are not a legal trap target in many of those same places.",
+		misses: "Bass, trout, and anything wider than the neck. This is a baitfish trap, not a dinner trap. A sunfish in it is not automatically yours to keep.",
 		water: "Pond edges, slow creeks, the slack behind a log.",
-		time: "Two hours to overnight.",
-		tend: "Look at it every few hours. A forgotten bottle is litter, and fish left in a warm trap die.",
-		law: "Funnel traps for baitfish are legal in some places and banned in others. Where they are allowed, they often must carry your name and be checked on a schedule. Never set one where a trap isn't permitted, and never move live bait to another water — that is how invasive species travel.",
+		time: "Two hours, or longer only if this water allows an unattended trap.",
+		tend: "If the rule allows you to leave it, check it on the schedule that rule names, and take it with you when you leave. If you cannot name that schedule, do not leave it. A forgotten bottle is litter, and fish left in a warm trap die.",
+		law: "Funnel traps are legal only for certain species, materials, and waters — and banned in many others. A cut soda bottle is not automatically a legal minnow trap. Illinois's 2026 fishing information, for example, allows minnow and crayfish traps of metal screen, hardware cloth, plastic, or nylon mesh, within size and mesh limits, and requires the operator's name and address on an unattended trap. Sunfish are not on that list. Confirm the rule for this water before you cut the bottle. Never move live bait to another water.",
 		materialIds: [
 			"bottle",
 			"knife",
@@ -175,6 +175,10 @@ var methods = [
 			"stone"
 		],
 		steps: [
+			{
+				title: "Confirm local permission and rules before building or setting this",
+				body: "Read the current regulation for this specific water — the device, the materials, the species, and whether a trap may be left. A page in this guide is not permission. If the rule does not clearly allow this bottle, stop. Fish a legal hook instead."
+			},
 			{
 				title: "Cut just below the shoulder",
 				body: "Take the top third off where the bottle stops tapering and the sides go straight. A clean cut. The cap comes off and goes in your pocket, not in the creek."
@@ -221,12 +225,12 @@ var methods = [
 		image: "/photos/basket.jpg",
 		alt: "A handmade wooden slat fish trap with an inward funnel and a lashed side door, resting on wet river mud.",
 		tags: ["catfish"],
-		catches: "Bullhead, channel catfish, eel in the right water. Crayfish if the gaps are tight.",
+		catches: "Where a slat trap is legal for them: bullhead, channel catfish, eel. Crayfish if the gaps are tight and the rule allows crayfish.",
 		misses: "Clear-water trout and wary bass. They don't commit to a dark box the way a catfish does.",
 		water: "Slow rivers, muddy banks, the deep slack of a pond at night.",
-		time: "Set at dusk. Lift at dawn.",
-		tend: "Overnight is the working window. Come back. An abandoned basket keeps fishing after you've forgotten it.",
-		law: "Slat traps, pots, and eel baskets are tightly regulated and banned outright in many fisheries. Some waters allow them only with a tag, a size limit, and a daily check. If you can't name the rule for this river, don't sink the trap.",
+		time: "Overnight only if this water allows an unattended trap. Otherwise do not set it.",
+		tend: "Come back on the schedule the rule names. An abandoned basket keeps fishing after you've forgotten it. If you cannot name the check rule, do not leave it.",
+		law: "Slat traps, pots, and eel baskets are tightly regulated and banned outright in many fisheries. Where a basket is allowed, that water's text names the material, the size, the tag, and how often you must check it. If you cannot name that text, do not sink the trap.",
 		materialIds: [
 			"shoots",
 			"cord",
@@ -235,6 +239,10 @@ var methods = [
 			"stone"
 		],
 		steps: [
+			{
+				title: "Confirm local permission and rules before building or setting this",
+				body: "Read the current regulation for this specific river — material, size, tag, species, and how often an unattended basket must be checked. If you cannot name that rule, do not cut the shoots."
+			},
 			{
 				title: "Cut a bundle of shoots",
 				body: "Sixteen to twenty-four straight green shoots, each about as long as your forearm and no thicker than a finger. Green wood lashes. Dry wood splits."
@@ -285,18 +293,22 @@ var methods = [
 		image: "/photos/weir.jpg",
 		alt: "A shallow forest creek with a brush wing of stakes and leafy branches along one bank, leaving most of the channel open.",
 		tags: ["panfish", "minnow"],
-		catches: "Creek chub, suckers, small bass, sunfish — whatever already lives in that run.",
+		catches: "Where a wing like this is legal: creek chub, suckers, small bass, sunfish — whatever already lives in that run.",
 		misses: "Lake fish, and anything in water you can't wade. A weir without a current to guide fish is just a pile of brush.",
 		water: "A wadeable creek with a knee-deep run that shallows beside the bank.",
 		time: "An afternoon.",
 		tend: "This is an attended method. Close the pocket, take what you'll eat, and pull the wing apart before you leave so the creek is a creek again.",
-		law: "Blocking a stream is illegal in a great many places, and it strands everything upstream even when nobody is looking. A wing that leaves the channel open is still gear, and gear has rules. If weirs aren't allowed, don't build one. Ancient stone or wood weirs you find already in the water are not yours to 'fix' or take apart.",
+		law: "Blocking or altering a stream is illegal in a great many places, even when the main channel stays open. Confirm local permission before you cut a stake. If weirs aren't allowed on this creek, don't build one. Ancient stone or wood weirs you find already in the water are not yours to 'fix' or take apart.",
 		materialIds: [
 			"stakes",
 			"brush",
 			"knife"
 		],
 		steps: [
+			{
+				title: "Confirm local permission and rules before building or setting this",
+				body: "A brush wing alters a creek even when the channel stays open. Read the rule for this water before you cut anything. If a weir or brush dam isn't clearly allowed, leave the bank as you found it and fish a legal hook."
+			},
 			{
 				title: "Read the creek before you cut anything",
 				body: "Fish sit in the soft water beside the fast tongue, and at the head of a pool. Your wing should cross that soft edge. If you can't see the bottom, pick another spot."
@@ -348,9 +360,13 @@ var methods = [
 		water: "A sheltered tidal flat with a gentle slope and stones already on it.",
 		time: "One tide. Set while the flat is bare. Tend the last hour of the ebb.",
 		tend: "Be there as the water leaves. Take a few fish for a meal and turn the rest out before they bake in a warm puddle.",
-		law: "Coastal fish traps are restricted or illegal in many countries, and some stone weirs on the shore are protected archaeology. Do not add to, 'restore,' or dismantle an old wall you didn't build. If a new corral isn't allowed, fish a hook on the ebb instead. When you are done with a wall you built, scatter it.",
+		law: "Coastal fish traps and new stone walls are restricted or illegal on many shores, and some stone weirs are protected archaeology. Confirm local permission before you stack a stone. Do not add to, 'restore,' or dismantle an old wall you didn't build. If a new corral isn't allowed, fish a hook on the ebb instead. When you are done with a wall you built, scatter it.",
 		materialIds: ["flatstones"],
 		steps: [
+			{
+				title: "Confirm local permission and rules before building or setting this",
+				body: "Read the shore rule for this flat before you move a stone. New walls are illegal in many places, and an old wall is not yours to change. If a corral isn't clearly allowed, fish a hook on the ebb instead."
+			},
 			{
 				title: "Walk the flat at low water",
 				body: "Find a natural basin, or a gentle slope where the last water already wants to pool. If the bottom doesn't hold a puddle anywhere, a wall will only make a damp curve of rocks."
@@ -402,7 +418,7 @@ var methods = [
 			"trout"
 		],
 		catches: "Bluegill and other sunfish, perch, trout, bass, catfish, carp — nearly anything that eats in water you can reach.",
-		misses: "Schools of tiny baitfish, which a bottle trap takes more honestly. And any hour when you refuse to move.",
+		misses: "Schools of tiny baitfish. A legal bait trap takes those more honestly where one is allowed. And any hour when you refuse to move.",
 		water: "Creeks, ponds, rivers, harbors, the edge of a tide.",
 		time: "An hour can be enough. Dawn and dusk are kinder than bright noon.",
 		tend: "You are the tend. A hook left set and unattended is not fishing. It's a snag with a fish on it.",
@@ -462,9 +478,9 @@ var methods = [
 	{
 		id: "gorge",
 		family: "hook",
-		name: "Gorge and pin",
+		name: "Wooden gorge",
 		epithet: "Only if you mean to keep the fish.",
-		summary: "A sliver of hard wood, sharp at both ends, line tied at the middle and buried in bait. The fish swallows it. A steady pull turns the gorge crosswise. You will not unhook this fish. If that isn't the plan, find a real hook — a pin or a bent nail will do.",
+		summary: "A sliver of hard wood, sharp at both ends, line tied at the middle and buried in bait. The fish swallows it. A steady pull turns the gorge crosswise. You will not unhook this fish. If that isn't the plan, carry a proper hook. Do not make a point from a pin, a nail, or a thorn.",
 		image: "/photos/gorge.jpg",
 		alt: "A small wooden gorge, sharp at both ends, with bread dough around the middle and a dark line tied at the center, on driftwood.",
 		tags: ["panfish", "catfish"],
@@ -473,7 +489,7 @@ var methods = [
 		water: "The same water as a hook, when you have line and bait and no metal point.",
 		time: "As long as a baited hook. Longer strikes, slower hands.",
 		tend: "You hold the line. A swallowed gorge left in a swimming fish is a cruel accident, not a method.",
-		law: "Many places allow only certain hooks, often barbless, and treat a gorge as illegal gear. It is a harvest tool from a time before hooks were cheap. Use it only where it is legal and only for a fish you will eat. A safety pin or a nail filed smooth is easier to defend, and easier to remove.",
+		law: "Many places allow only certain hooks, often barbless, and treat a gorge as illegal gear. It is a harvest tool from a time before hooks were cheap. Use it only where it is legal and only for a fish you will eat. Carry a proper hook. A safety pin, a bent nail, or a thorn is not a hook — it is unreliable, and it can injure you or the fish.",
 		materialIds: [
 			"gorgewood",
 			"line",
@@ -505,7 +521,7 @@ var methods = [
 			}
 		],
 		setting: [
-			"A safety pin, a bent nail, or a thorn lashed to a short wood shank is the better improvised hook. Tie the line at the top of the shank. Leave the point smooth if release is possible. A thorn works until it splits.",
+			"Carry a proper hook. Do not lash a safety pin, a bent nail, or a thorn to a stick. Improvised points are unreliable and can injure you or the fish. If you do not have a real hook, do not invent one.",
 			"A gorge fishes best on fish that swallow: bullhead, some panfish, carp. It is a poor tool for trout that nip.",
 			"Short line. You need to feel the moment the bait is truly taken, not the moment it was bumped."
 		],

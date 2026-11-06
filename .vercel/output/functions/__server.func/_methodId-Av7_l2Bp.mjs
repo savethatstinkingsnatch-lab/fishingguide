@@ -1,10 +1,10 @@
 import { i as __toESM } from "./_runtime.mjs";
-import { c as lies, d as methods, l as materialById, n as clinch, o as getMethod, r as depths, t as baits } from "./_ssr/guide-vuM60l-L.mjs";
+import { c as lies, d as methods, l as materialById, n as clinch, o as getMethod, r as depths, t as baits } from "./_ssr/guide-DrvdgcRU.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "./_libs/@tanstack/react-router+[...].mjs";
 import { i as ArrowLeft, r as ArrowRight } from "./_libs/lucide-react.mjs";
-import { n as Route, r as useField } from "./_ssr/router-1SfIilET.mjs";
+import { n as Route, r as useField } from "./_ssr/router-DsI8fdyg.mjs";
 import { a as btnGhost, i as btn, n as LawNote, r as Plate, t as CheckRow } from "./_ssr/bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_methodId-Dgah0fBf.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_methodId-Av7_l2Bp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function HookStudio() {
@@ -256,46 +256,53 @@ function MethodPage() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "mt-10",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex items-baseline justify-between gap-3",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-						className: "font-display text-3xl",
-						children: "Build"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "text-sm tabular-nums text-ink/70",
-						children: [
-							doneSteps,
-							" / ",
-							method.steps.length
-						]
-					})]
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
-					className: "mt-4 space-y-4",
-					children: method.steps.map((step, index) => {
-						const id = `${method.id}:${index}`;
-						const on = Boolean(steps[id]);
-						return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-							className: "grid grid-cols-[auto_1fr] gap-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "font-display text-3xl text-copper tabular-nums",
-								children: index + 1
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-								type: "button",
-								role: "checkbox",
-								"aria-checked": on,
-								onClick: () => toggleStep(id),
-								className: "min-h-11 text-left",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: `font-display text-2xl ${on ? "text-ink/45 line-through" : ""}`,
-									children: step.title
-								})
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-1 text-ink/80",
-								children: step.body
-							})] })]
-						}, step.title);
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex items-baseline justify-between gap-3",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "font-display text-3xl",
+							children: "Build"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+							className: "text-sm tabular-nums text-ink/70",
+							children: [
+								doneSteps,
+								" / ",
+								method.steps.length
+							]
+						})]
+					}),
+					method.family !== "hook" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-4",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Confirm local permission and rules before building or setting this. The steps below are how the device is made, not a finding that your water allows it." })
+					}) : null,
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ol", {
+						className: "mt-4 space-y-4",
+						children: method.steps.map((step, index) => {
+							const id = `${method.id}:${index}`;
+							const on = Boolean(steps[id]);
+							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+								className: "grid grid-cols-[auto_1fr] gap-3",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "font-display text-3xl text-copper tabular-nums",
+									children: index + 1
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+									type: "button",
+									role: "checkbox",
+									"aria-checked": on,
+									onClick: () => toggleStep(id),
+									className: "min-h-11 text-left",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: `font-display text-2xl ${on ? "text-ink/45 line-through" : ""}`,
+										children: step.title
+									})
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-1 text-ink/80",
+									children: step.body
+								})] })]
+							}, step.title);
+						})
 					})
-				})]
+				]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "mt-10",

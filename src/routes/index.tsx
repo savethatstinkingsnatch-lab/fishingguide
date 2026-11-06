@@ -61,11 +61,18 @@ function Home() {
 
       <section className="mx-auto max-w-5xl px-5 pb-6">
         <LawNote>
-          Get a fishing license for the state or place you are in, and read that water's rules
-          before you fish. Traps, weirs, and corrals are illegal in a lot of water. Where they are
-          allowed they usually must be tagged and checked on a schedule. A hook and line is what
-          most places actually permit. Seasons, size limits, bag limits, and bait bans still
-          apply. If you are unsure, do not build a trap — fish a legal hook instead.
+          Get a fishing license for the state or place you are in, and read the rules for the
+          specific water you will fish before you fish. Trap and corral rules are local. They name
+          the device, the materials, the species, and how often you must tend it. "Usually tagged
+          and checked" is not a rule you can fish by. Illinois's 2026 fishing information, as one
+          example, allows minnow and crayfish traps only in metal screen, hardware cloth, plastic,
+          or nylon mesh, within stated size and mesh limits, and an unattended trap must carry the
+          operator's name and address. A cut soda bottle and a wooden slat basket may not qualify
+          there, and small sunfish are not the legal target of those traps. Hook-and-line devices
+          left set in Illinois must be checked at least every 24 hours. Another state may ban the
+          trap entirely. A hook and line is what most places actually permit. Seasons, size
+          limits, bag limits, and bait bans still apply. If you are unsure, do not build a trap —
+          fish a legal hook instead.
         </LawNote>
         <div className="mt-4">
           <KeepingBox />

@@ -46,7 +46,7 @@ const gaps: Record<string, { gear: GearId; line: string } | null> = {
   },
   hook: {
     gear: "hook",
-    line: "A real hook changes the day. Until you have one, a bent pin or a nail is closer to this method than a gorge is.",
+    line: "Carry a proper hook. A bent pin or a nail is not a substitute — it is unreliable and can injure you or the fish. Without a real hook, do not improvise a point.",
   },
   gorge: {
     gear: "knife",
@@ -126,7 +126,7 @@ export function advise(answers: Answers): { lead: Pick; alt: Pick | null; thin: 
           score -= 2;
         }
         if (answers.quarry === "baitfish") {
-          add(4, "Minnows and shiners are what a bottle funnel actually catches.");
+          add(4, "Minnows and shiners are what a bottle funnel actually catches — and only where a trap of this kind is legal for those fish. Sunfish are often not a legal trap target.");
         }
         if (answers.water === "pond" || answers.water === "creek") {
           add(2, "Still edges and slow creeks are where small fish patrol a scent trail.");
@@ -149,7 +149,7 @@ export function advise(answers: Answers): { lead: Pick; alt: Pick | null; thin: 
           add(4, "Catfish, bullhead, and eel hunt by smell and will commit to a dark funnel.");
         }
         if (answers.window === "overnight") {
-          add(4, "This trap works while you sleep, if you're allowed to leave it and you come back at dawn.");
+          add(4, "An overnight set is only a candidate if this water allows an unattended trap, with the tag and the check schedule that rule names. If you cannot quote that rule, do not leave it.");
         }
         if (answers.window === "hour") score -= 4;
         if (has("sticks") && has("cord")) {
@@ -172,7 +172,7 @@ export function advise(answers: Answers): { lead: Pick; alt: Pick | null; thin: 
           if (why && n > 0) reasons.push(why);
         };
         if (answers.water === "creek") {
-          add(6, "A wadeable creek is the only place a brush wing earns its branches.");
+          add(6, "A wadeable creek is the only place a brush wing earns its branches — and only if that creek's rules let you put brush in the water.");
         } else {
           score -= 3;
         }
@@ -197,7 +197,7 @@ export function advise(answers: Answers): { lead: Pick; alt: Pick | null; thin: 
           if (why && n > 0) reasons.push(why);
         };
         if (answers.water === "tidal") {
-          add(6, "The tide is the gear. A low stone wall turns the ebb into a corral.");
+          add(6, "The tide is the gear. A low stone wall turns the ebb into a corral only where a new wall is legal. Many shores ban it, and old walls are not yours to change.");
         } else {
           score -= 8;
         }

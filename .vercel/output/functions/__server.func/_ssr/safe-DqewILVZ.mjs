@@ -1,12 +1,12 @@
 import { S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as VolumeNote, t as KeepingBox } from "./notes-D6FbLOI8.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/safe-DwA0gqWB.js
+import { n as VolumeNote, t as KeepingBox } from "./notes-tUuJ-l6-.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/safe-DqewILVZ.js
 var import_jsx_runtime = require_jsx_runtime();
 var rules = [
 	"License: Buy and carry a valid fishing license. Kids' rules vary by age and state.",
 	"Adults in charge: Children fish with an adult. An adult handles hooks, knives, and fish that will be killed.",
-	"Life jacket: Wear a life jacket (PFD) in a boat, and strongly consider one when wading deep, swift, or cold water. Non-swimmers and kids wear one at the water's edge too.",
-	"Weather: Leave the water if thunder is near. Rising muddy water and ice shelves are danger, not adventure. Cold water can kill even strong swimmers.",
+	"Life jacket: When a boat is underway, wear a properly fitted, Coast Guard–approved PFD. Federal rules generally require children under 13 to wear one on an underway vessel, subject to the stated exceptions and to state rules, which can be stricter. Strongly consider a PFD when wading deep, swift, or cold water. Non-swimmers and kids wear one at the water's edge too.",
+	"Weather: When you hear thunder, get out of the water and move to a substantial building or a hard-topped vehicle. Wait at least 30 minutes after the last thunder before you go back. Rising muddy water and ice shelves are danger, not adventure. Cold water can kill even strong swimmers.",
 	"Hooks in skin: If a hook is deep, near an eye, or in a joint, do not cut or push it yourself. Go to urgent care or an ER. For a shallow hook in soft skin, many people seek clinic help rather than home surgery. Call Poison Control at 1-800-222-1222 only if a chemical or bait toxin is involved — for embedded hooks, medical care is the path.",
 	"Never leave a baited hook or trap unattended where a person, pet, or wildlife can step on it."
 ];

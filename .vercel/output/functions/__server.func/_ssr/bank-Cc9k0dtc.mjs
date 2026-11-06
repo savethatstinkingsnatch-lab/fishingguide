@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { o as getMethod } from "./guide-vuM60l-L.mjs";
+import { o as getMethod } from "./guide-DrvdgcRU.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as ArrowRight } from "../_libs/lucide-react.mjs";
-import { a as btnGhost, i as btn, r as Plate } from "./bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/bank-BmpDNuGs.js
+import { a as btnGhost, i as btn, n as LawNote, r as Plate } from "./bits-C1ciQPO1.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/bank-Cc9k0dtc.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var gaps = {
@@ -25,7 +25,7 @@ var gaps = {
 	},
 	hook: {
 		gear: "hook",
-		line: "A real hook changes the day. Until you have one, a bent pin or a nail is closer to this method than a gorge is."
+		line: "Carry a proper hook. A bent pin or a nail is not a substitute — it is unreliable and can injure you or the fish. Without a real hook, do not improvise a point."
 	},
 	gorge: {
 		gear: "knife",
@@ -83,7 +83,7 @@ function advise(answers) {
 			};
 			if (has("bottle")) add(5, "The bottle is the trap. Everything else is lashing and a pinch of bait.");
 			else score -= 2;
-			if (answers.quarry === "baitfish") add(4, "Minnows and shiners are what a bottle funnel actually catches.");
+			if (answers.quarry === "baitfish") add(4, "Minnows and shiners are what a bottle funnel actually catches — and only where a trap of this kind is legal for those fish. Sunfish are often not a legal trap target.");
 			if (answers.water === "pond" || answers.water === "creek") add(2, "Still edges and slow creeks are where small fish patrol a scent trail.");
 			if (answers.water === "river") add(1);
 			if (answers.water === "tidal") score -= 3;
@@ -104,7 +104,7 @@ function advise(answers) {
 				if (why && n > 0) reasons.push(why);
 			};
 			if (answers.quarry === "catfish") add(4, "Catfish, bullhead, and eel hunt by smell and will commit to a dark funnel.");
-			if (answers.window === "overnight") add(4, "This trap works while you sleep, if you're allowed to leave it and you come back at dawn.");
+			if (answers.window === "overnight") add(4, "An overnight set is only a candidate if this water allows an unattended trap, with the tag and the check schedule that rule names. If you cannot quote that rule, do not leave it.");
 			if (answers.window === "hour") score -= 4;
 			if (has("sticks") && has("cord")) add(3, "Shoots and cord are enough to lash a slat trap before dusk.");
 			if (!has("sticks")) score -= 2;
@@ -125,7 +125,7 @@ function advise(answers) {
 				score += n;
 				if (why && n > 0) reasons.push(why);
 			};
-			if (answers.water === "creek") add(6, "A wadeable creek is the only place a brush wing earns its branches.");
+			if (answers.water === "creek") add(6, "A wadeable creek is the only place a brush wing earns its branches — and only if that creek's rules let you put brush in the water.");
 			else score -= 3;
 			if (has("sticks")) add(3, "Brush on the bank is the wall. You don't carry this method in.");
 			if (answers.window === "afternoon") add(2, "You have time to weave a wing and walk the fish down into it.");
@@ -145,7 +145,7 @@ function advise(answers) {
 				score += n;
 				if (why && n > 0) reasons.push(why);
 			};
-			if (answers.water === "tidal") add(6, "The tide is the gear. A low stone wall turns the ebb into a corral.");
+			if (answers.water === "tidal") add(6, "The tide is the gear. A low stone wall turns the ebb into a corral only where a new wall is legal. Many shores ban it, and old walls are not yours to change.");
 			else score -= 8;
 			if (answers.window === "tide") add(4, "You need the falling water. Set on the dry flat, take fish as the sea leaves.");
 			if (answers.window === "afternoon") add(1);
@@ -217,7 +217,7 @@ var windows = [
 	{
 		id: "overnight",
 		label: "Overnight",
-		hint: "You can set at dusk and come back at dawn."
+		hint: "Only if this water allows an unattended device, tagged and checked on its schedule."
 	},
 	{
 		id: "tide",
@@ -348,7 +348,11 @@ function Bank() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-3 max-w-xl text-lg text-ink/80",
-				children: "Four questions. A method you can actually build with what's in your pockets, and a runner-up if the first one is a poor fit."
+				children: "Four questions. A method you can actually build with what's in your pockets, and a runner-up if the first one is a poor fit. A match is not permission to set it."
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mt-4",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Before this planner recommends a trap or corral: confirm the rules for this specific water. It can suggest a method from your time and your pockets. It cannot tell you that method is legal where you are standing. Illinois's 2026 fishing information, as one example, allows minnow and crayfish traps only in stated materials and sizes, and an unattended trap must carry the operator's name and address. Hook-and-line devices left set there must be checked at least every 24 hours. Your water can be stricter or entirely different. If the rule is not clear, fish a legal hook." })
 			}),
 			result ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "rise mt-8 space-y-6",
@@ -361,6 +365,7 @@ function Bank() {
 						className: "text-ink/80",
 						children: "This bank is thin. The pick below is the least-bad start, not a promise of fish."
 					}) : null,
+					result.lead.method.family !== "hook" || result.alt != null && result.alt.method.family !== "hook" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Confirm local permission and rules before building or setting this. A match on this page is not permission. Read the current rule for this water — the device, the materials, the species, and whether it may be left unattended. If that rule is not clear, do not build it." }) : null,
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 						className: "grid gap-5 md:grid-cols-2",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Plate, {
@@ -369,7 +374,7 @@ function Bank() {
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "text-sm font-semibold tracking-wide text-copper uppercase",
-								children: "Start here"
+								children: result.lead.method.family === "hook" ? "Start here" : "Possible match — not permission"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 								className: "mt-1 font-display text-4xl",
@@ -387,7 +392,7 @@ function Bank() {
 								to: "/methods/$methodId",
 								params: { methodId: result.lead.method.id },
 								className: `${btn} mt-5`,
-								children: ["Open the build", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
+								children: [result.lead.method.family === "hook" ? "Open the build" : "Read the page — confirm the rule first", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
 									className: "size-4",
 									"aria-hidden": "true"
 								})]

@@ -1,10 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { a as filterTags, d as methods, i as families } from "./guide-vuM60l-L.mjs";
+import { a as filterTags, d as methods, i as families } from "./guide-DrvdgcRU.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as ArrowRight } from "../_libs/lucide-react.mjs";
 import { i as btn, n as LawNote, r as Plate } from "./bits-C1ciQPO1.mjs";
-import { n as VolumeNote, t as KeepingBox } from "./notes-D6FbLOI8.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DglJJFfT.js
+import { n as VolumeNote, t as KeepingBox } from "./notes-tUuJ-l6-.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-C-8ILm3u.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
@@ -71,7 +71,7 @@ function Home() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "mx-auto max-w-5xl px-5 pb-6",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Get a fishing license for the state or place you are in, and read that water's rules before you fish. Traps, weirs, and corrals are illegal in a lot of water. Where they are allowed they usually must be tagged and checked on a schedule. A hook and line is what most places actually permit. Seasons, size limits, bag limits, and bait bans still apply. If you are unsure, do not build a trap — fish a legal hook instead." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Get a fishing license for the state or place you are in, and read the rules for the specific water you will fish before you fish. Trap and corral rules are local. They name the device, the materials, the species, and how often you must tend it. \"Usually tagged and checked\" is not a rule you can fish by. Illinois's 2026 fishing information, as one example, allows minnow and crayfish traps only in metal screen, hardware cloth, plastic, or nylon mesh, within stated size and mesh limits, and an unattended trap must carry the operator's name and address. A cut soda bottle and a wooden slat basket may not qualify there, and small sunfish are not the legal target of those traps. Hook-and-line devices left set in Illinois must be checked at least every 24 hours. Another state may ban the trap entirely. A hook and line is what most places actually permit. Seasons, size limits, bag limits, and bait bans still apply. If you are unsure, do not build a trap — fish a legal hook instead." }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "mt-4",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(KeepingBox, {})

@@ -116,6 +116,14 @@ function MethodPage() {
             {doneSteps} / {method.steps.length}
           </p>
         </div>
+        {method.family !== "hook" ? (
+          <div className="mt-4">
+            <LawNote>
+              Confirm local permission and rules before building or setting this. The steps below
+              are how the device is made, not a finding that your water allows it.
+            </LawNote>
+          </div>
+        ) : null}
         <ol className="mt-4 space-y-4">
           {method.steps.map((step, index) => {
             const id = `${method.id}:${index}`;

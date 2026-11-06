@@ -1,5 +1,5 @@
 import { S as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/glossary-CVAOs6yQ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/glossary-Dojt8YJo.js
 var import_jsx_runtime = require_jsx_runtime();
 var terms = [
 	{
@@ -20,7 +20,7 @@ var terms = [
 	},
 	{
 		name: "PFD",
-		body: "Personal flotation device; a life jacket."
+		body: "Personal flotation device; a life jacket. On an underway boat, wear one that is properly fitted and Coast Guard approved."
 	},
 	{
 		name: "Funnel trap",

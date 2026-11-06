@@ -1,10 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { o as getMethod } from "./guide-vuM60l-L.mjs";
+import { o as getMethod } from "./guide-DrvdgcRU.mjs";
 import { J as require_react, S as require_jsx_runtime, _ as lazyRouteComponent, b as Link, d as Scripts, f as HeadContent, g as Outlet, h as createRouter, p as useRouterState, v as createFileRoute, x as useRouter, y as createRootRoute } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-1SfIilET.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DsI8fdyg.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -545,7 +545,7 @@ var Route$8 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$7 = () => import("./routes-DglJJFfT.mjs");
+var $$splitComponentImporter$7 = () => import("./routes-C-8ILm3u.mjs");
 var Route$7 = createFileRoute("/")({
 	head: () => ({ meta: [{ title: "Fishing: Catchcraft" }, {
 		name: "description",
@@ -558,32 +558,32 @@ var Route$6 = createFileRoute("/about")({
 	head: () => ({ meta: [{ title: "About — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./bank-BmpDNuGs.mjs");
+var $$splitComponentImporter$5 = () => import("./bank-Cc9k0dtc.mjs");
 var Route$5 = createFileRoute("/bank")({
 	head: () => ({ meta: [{ title: "On the bank — Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./glossary-CVAOs6yQ.mjs");
+var $$splitComponentImporter$4 = () => import("./glossary-Dojt8YJo.mjs");
 var Route$4 = createFileRoute("/glossary")({
 	head: () => ({ meta: [{ title: "Glossary — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./kit-BS24SLTa.mjs");
+var $$splitComponentImporter$3 = () => import("./kit-BANwEY_v.mjs");
 var Route$3 = createFileRoute("/kit")({
 	head: () => ({ meta: [{ title: "Field kit — Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./safe-DwA0gqWB.mjs");
+var $$splitComponentImporter$2 = () => import("./safe-DqewILVZ.mjs");
 var Route$2 = createFileRoute("/safe")({
 	head: () => ({ meta: [{ title: "Stay safe on the water — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./start-BVxB2Enc.mjs");
+var $$splitComponentImporter$1 = () => import("./start-BPs98Ket.mjs");
 var Route$1 = createFileRoute("/start")({
 	head: () => ({ meta: [{ title: "Start here — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("../_methodId-Dgah0fBf.mjs");
+var $$splitComponentImporter = () => import("../_methodId-Av7_l2Bp.mjs");
 var Route = createFileRoute("/methods/$methodId")({
 	head: ({ params }) => {
 		const method = getMethod(params.methodId);

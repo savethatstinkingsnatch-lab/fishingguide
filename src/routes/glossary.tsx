@@ -12,7 +12,7 @@ const terms: { name: string; body: string }[] = [
   { name: "Bag limit / size limit", body: "How many and how large you may keep." },
   { name: "Barbless", body: "A hook with the barb pinched flat; easier to release." },
   { name: "Catch-and-release", body: "Returning a fish to the water alive." },
-  { name: "PFD", body: "Personal flotation device; a life jacket." },
+  { name: "PFD", body: "Personal flotation device; a life jacket. On an underway boat, wear one that is properly fitted and Coast Guard approved." },
   { name: "Funnel trap", body: "A trap fish enter and cannot easily leave." },
   { name: "Weir / corral", body: "A wall or wing that herds fish with current or tide." },
   { name: "Gorge", body: "A swallowed stick hook; harvest only, often illegal." },

@@ -9,12 +9,12 @@ export const Route = createFileRoute("/start")({
 
 const steps = [
   "Get a license and read the rules for your water.",
-  "Pack a life jacket, small hooks, light line, bait, and forceps.",
+  "Pack a properly fitted, Coast Guard–approved life jacket, small hooks, light line, bait, and forceps.",
   "Start with hook and bait from the bank, not a trap.",
   "Pinch the barb if you will release fish.",
   "Wet hands, don't squeeze.",
   "Never dump live bait.",
-  "Check mercury advisories before you make a meal of it.",
+  "Check consumption advisories — they cover more than mercury, and they depend on the water and the species — before you make a meal of it.",
 ];
 
 function StartPage() {

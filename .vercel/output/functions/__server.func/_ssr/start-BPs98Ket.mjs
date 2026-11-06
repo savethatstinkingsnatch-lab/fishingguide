@@ -1,14 +1,14 @@
 import { S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/start-BVxB2Enc.js
+//#region node_modules/.nitro/vite/services/ssr/assets/start-BPs98Ket.js
 var import_jsx_runtime = require_jsx_runtime();
 var steps = [
 	"Get a license and read the rules for your water.",
-	"Pack a life jacket, small hooks, light line, bait, and forceps.",
+	"Pack a properly fitted, Coast Guard–approved life jacket, small hooks, light line, bait, and forceps.",
 	"Start with hook and bait from the bank, not a trap.",
 	"Pinch the barb if you will release fish.",
 	"Wet hands, don't squeeze.",
 	"Never dump live bait.",
-	"Check mercury advisories before you make a meal of it."
+	"Check consumption advisories — they cover more than mercury, and they depend on the water and the species — before you make a meal of it."
 ];
 function StartPage() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {

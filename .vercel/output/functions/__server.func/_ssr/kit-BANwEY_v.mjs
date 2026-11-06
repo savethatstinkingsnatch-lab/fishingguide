@@ -1,8 +1,8 @@
-import { s as kitGroups, u as materials } from "./guide-vuM60l-L.mjs";
+import { s as kitGroups, u as materials } from "./guide-DrvdgcRU.mjs";
 import { S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { r as useField } from "./router-1SfIilET.mjs";
+import { r as useField } from "./router-DsI8fdyg.mjs";
 import { t as CheckRow } from "./bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/kit-BS24SLTa.js
+//#region node_modules/.nitro/vite/services/ssr/assets/kit-BANwEY_v.js
 var import_jsx_runtime = require_jsx_runtime();
 function KitPage() {
 	const kit = useField((s) => s.kit);
