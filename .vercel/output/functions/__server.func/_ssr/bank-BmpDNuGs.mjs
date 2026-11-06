@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { o as getMethod } from "./guide-DjaGFKW7.mjs";
+import { o as getMethod } from "./guide-vuM60l-L.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as ArrowRight } from "../_libs/lucide-react.mjs";
 import { a as btnGhost, i as btn, r as Plate } from "./bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/bank-D3_D8Vtc.js
+//#region node_modules/.nitro/vite/services/ssr/assets/bank-BmpDNuGs.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var gaps = {

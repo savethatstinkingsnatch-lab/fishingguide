@@ -1,5 +1,35 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/guide-DjaGFKW7.js
+//#region node_modules/.nitro/vite/services/ssr/assets/guide-vuM60l-L.js
 var materials = [
+	{
+		id: "pfd",
+		name: "Life jacket (PFD)",
+		note: "In a boat, and when wading deep, swift, or cold water. Kids and non-swimmers wear one at the edge too.",
+		group: "Safety"
+	},
+	{
+		id: "forceps",
+		name: "Forceps or pliers for hooks",
+		note: "Back a hook out of a fish, or out of a shallow snag. Not for a hook buried in a person.",
+		group: "Safety"
+	},
+	{
+		id: "clippers",
+		name: "Nail clippers or line cutters",
+		note: "Cut line close to the knot. Faster and safer than a knife at the water.",
+		group: "Safety"
+	},
+	{
+		id: "firstaid",
+		name: "Small first-aid wipe and bandage",
+		note: "For nicks and shallow scrapes. A deep hook is a clinic trip, not a kit trick.",
+		group: "Safety"
+	},
+	{
+		id: "license",
+		name: "License in a dry bag or wallet",
+		note: "Carry the valid license for the state or place you are fishing.",
+		group: "Safety"
+	},
 	{
 		id: "knife",
 		name: "A knife or a sharp edge",
@@ -92,6 +122,7 @@ var materials = [
 	}
 ];
 var kitGroups = [
+	"Safety",
 	"Belt",
 	"Traps",
 	"Corrals",
@@ -412,7 +443,7 @@ var methods = [
 			},
 			{
 				title: "Lift, land, choose",
-				body: "A smooth lift, not a baseball swing. If it goes back: wet hands, unhook in the water, don't squeeze the belly. If you will eat it: a firm blow to the head, then bleed it. Don't leave it flopping on the stones."
+				body: "A smooth lift, not a baseball swing. If it goes back: wet hands, unhook in the water, don't squeeze the belly. If you will eat it: a firm blow to the head, then bleed it. Don't leave it flopping on the stones. To cook outdoors, see Volume 21: Making Fire. Never burn charcoal indoors."
 			}
 		],
 		setting: [
@@ -470,7 +501,7 @@ var methods = [
 			},
 			{
 				title: "Keep it, or don't start",
-				body: "There is no kind unhooking. Kill the fish promptly if you will eat it. If you look at it and change your mind, you are already too late — which is why this page is not the first method in the guide."
+				body: "There is no kind unhooking. Kill the fish promptly if you will eat it. If you look at it and change your mind, you are already too late — which is why this page is not the first method in the guide. To cook outdoors, see Volume 21: Making Fire. Never burn charcoal indoors."
 			}
 		],
 		setting: [

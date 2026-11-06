@@ -10,8 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as BankRouteImport } from './routes/bank'
+import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as KitRouteImport } from './routes/kit'
+import { Route as SafeRouteImport } from './routes/safe'
+import { Route as StartRouteImport } from './routes/start'
 import { Route as MethodsMethodIdRouteImport } from './routes/methods/$methodId'
 
 const IndexRoute = IndexRouteImport.update({
@@ -19,14 +23,34 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BankRoute = BankRouteImport.update({
   id: '/bank',
   path: '/bank',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GlossaryRoute = GlossaryRouteImport.update({
+  id: '/glossary',
+  path: '/glossary',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const KitRoute = KitRouteImport.update({
   id: '/kit',
   path: '/kit',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafeRoute = SafeRouteImport.update({
+  id: '/safe',
+  path: '/safe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartRoute = StartRouteImport.update({
+  id: '/start',
+  path: '/start',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MethodsMethodIdRoute = MethodsMethodIdRouteImport.update({
@@ -37,35 +61,76 @@ const MethodsMethodIdRoute = MethodsMethodIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bank': typeof BankRoute
+  '/glossary': typeof GlossaryRoute
   '/kit': typeof KitRoute
+  '/safe': typeof SafeRoute
+  '/start': typeof StartRoute
   '/methods/$methodId': typeof MethodsMethodIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bank': typeof BankRoute
+  '/glossary': typeof GlossaryRoute
   '/kit': typeof KitRoute
+  '/safe': typeof SafeRoute
+  '/start': typeof StartRoute
   '/methods/$methodId': typeof MethodsMethodIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/bank': typeof BankRoute
+  '/glossary': typeof GlossaryRoute
   '/kit': typeof KitRoute
+  '/safe': typeof SafeRoute
+  '/start': typeof StartRoute
   '/methods/$methodId': typeof MethodsMethodIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bank' | '/kit' | '/methods/$methodId'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/bank'
+    | '/glossary'
+    | '/kit'
+    | '/safe'
+    | '/start'
+    | '/methods/$methodId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bank' | '/kit' | '/methods/$methodId'
-  id: '__root__' | '/' | '/bank' | '/kit' | '/methods/$methodId'
+  to:
+    | '/'
+    | '/about'
+    | '/bank'
+    | '/glossary'
+    | '/kit'
+    | '/safe'
+    | '/start'
+    | '/methods/$methodId'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/bank'
+    | '/glossary'
+    | '/kit'
+    | '/safe'
+    | '/start'
+    | '/methods/$methodId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   BankRoute: typeof BankRoute
+  GlossaryRoute: typeof GlossaryRoute
   KitRoute: typeof KitRoute
+  SafeRoute: typeof SafeRoute
+  StartRoute: typeof StartRoute
   MethodsMethodIdRoute: typeof MethodsMethodIdRoute
 }
 
@@ -78,6 +143,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bank': {
       id: '/bank'
       path: '/bank'
@@ -85,11 +157,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BankRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/glossary': {
+      id: '/glossary'
+      path: '/glossary'
+      fullPath: '/glossary'
+      preLoaderRoute: typeof GlossaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/kit': {
       id: '/kit'
       path: '/kit'
       fullPath: '/kit'
       preLoaderRoute: typeof KitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safe': {
+      id: '/safe'
+      path: '/safe'
+      fullPath: '/safe'
+      preLoaderRoute: typeof SafeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/start': {
+      id: '/start'
+      path: '/start'
+      fullPath: '/start'
+      preLoaderRoute: typeof StartRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/methods/$methodId': {
@@ -104,8 +197,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   BankRoute: BankRoute,
+  GlossaryRoute: GlossaryRoute,
   KitRoute: KitRoute,
+  SafeRoute: SafeRoute,
+  StartRoute: StartRoute,
   MethodsMethodIdRoute: MethodsMethodIdRoute,
 }
 export const routeTree = rootRouteImport

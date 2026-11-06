@@ -1,10 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { o as getMethod } from "./guide-DjaGFKW7.mjs";
+import { o as getMethod } from "./guide-vuM60l-L.mjs";
 import { J as require_react, S as require_jsx_runtime, _ as lazyRouteComponent, b as Link, d as Scripts, f as HeadContent, g as Outlet, h as createRouter, p as useRouterState, v as createFileRoute, x as useRouter, y as createRootRoute } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
 import { n as create, t as persist } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-C2HYKw_s.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-1SfIilET.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -376,6 +376,24 @@ var links = [
 		label: "Kit"
 	}
 ];
+var more = [
+	{
+		to: "/start",
+		label: "Start here"
+	},
+	{
+		to: "/safe",
+		label: "Stay safe"
+	},
+	{
+		to: "/glossary",
+		label: "Glossary"
+	},
+	{
+		to: "/about",
+		label: "About"
+	}
+];
 function Shell({ children }) {
 	const path = useRouterState({ select: (s) => s.location.pathname });
 	const kit = useField((s) => s.kit);
@@ -394,24 +412,39 @@ function Shell({ children }) {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
 				className: "sticky top-0 z-20 border-b border-ink/10 bg-paper/95 backdrop-blur-md",
 				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mx-auto flex max-w-5xl items-center justify-between gap-4 px-5",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/",
-						className: "font-display text-xl italic text-ink",
-						children: "Catchcraft"
+					className: "mx-auto max-w-5xl px-5",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex items-center justify-between gap-4",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/",
+							className: "font-display text-xl italic text-ink",
+							children: "Catchcraft"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+							"aria-label": "Primary",
+							className: "flex items-center gap-4",
+							children: links.map((link) => {
+								const on = link.to === "/" ? path === "/" || path.startsWith("/methods") : path.startsWith(link.to);
+								return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+									to: link.to,
+									"aria-current": on ? "page" : void 0,
+									className: `inline-flex min-h-11 items-center border-b-2 text-sm font-semibold ${on ? "border-copper text-river" : "border-transparent text-ink/70 hover:text-ink"}`,
+									children: [link.label, link.to === "/kit" && packed > 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "ml-1.5 tabular-nums text-copper",
+										children: packed
+									}) : null]
+								}, link.to);
+							})
+						})]
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-						"aria-label": "Primary",
-						className: "flex items-center gap-4",
-						children: links.map((link) => {
-							const on = link.to === "/" ? path === "/" || path.startsWith("/methods") : path.startsWith(link.to);
-							return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+						"aria-label": "Pocket guide",
+						className: "flex flex-wrap gap-x-4 border-t border-ink/10",
+						children: more.map((link) => {
+							const on = path === link.to;
+							return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 								to: link.to,
 								"aria-current": on ? "page" : void 0,
-								className: `inline-flex min-h-11 items-center border-b-2 text-sm font-semibold ${on ? "border-copper text-river" : "border-transparent text-ink/70 hover:text-ink"}`,
-								children: [link.label, link.to === "/kit" && packed > 0 ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "ml-1.5 tabular-nums text-copper",
-									children: packed
-								}) : null]
+								className: `inline-flex min-h-11 items-center text-sm font-semibold ${on ? "text-river" : "text-ink/70 hover:text-ink"}`,
+								children: link.label
 							}, link.to);
 						})
 					})]
@@ -423,20 +456,35 @@ function Shell({ children }) {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
 				className: "border-t border-ink/10",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mx-auto max-w-5xl px-5 py-8 text-sm text-ink/70",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "max-w-2xl",
-						children: "Leave the channel open. Tend what you set. Take what you'll eat. The rule on the water you're standing in beats anything written here."
-					})
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mx-auto max-w-5xl space-y-3 px-5 py-8 text-sm text-ink/70",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "max-w-2xl",
+							children: "Leave the channel open. Tend what you set. Take what you'll eat. The rule on the water you're standing in beats anything written here."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "max-w-2xl",
+							children: "Privacy: This guide does not collect your name, email, or any personal information. Your field-kit checks are saved only on your own device."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
+							"aria-label": "Series",
+							className: "flex flex-wrap gap-x-4 gap-y-1",
+							children: more.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+								to: link.to,
+								className: "font-semibold text-river",
+								children: link.label
+							}, link.to))
+						})
+					]
 				})
 			})
 		]
 	});
 }
-var styles_default = "/assets/styles-CzlSYVLG.css";
-var APP_NAME = "Catchcraft";
-var Route$4 = createRootRoute({
+var styles_default = "/assets/styles-q8LHYGks.css";
+var APP_NAME = "Fishing: Catchcraft";
+var Route$8 = createRootRoute({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -497,25 +545,45 @@ var Route$4 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$3 = () => import("./routes-ZCAOM26U.mjs");
-var Route$3 = createFileRoute("/")({
-	head: () => ({ meta: [{ title: "Catchcraft — traps, corrals, and the hook" }, {
+var $$splitComponentImporter$7 = () => import("./routes-DglJJFfT.mjs");
+var Route$7 = createFileRoute("/")({
+	head: () => ({ meta: [{ title: "Fishing: Catchcraft" }, {
 		name: "description",
 		content: "Build a bottle funnel, a slat basket, a brush wing, a stone tide corral, or fish a hook and bait from the bank."
 	}] }),
+	component: lazyRouteComponent($$splitComponentImporter$7, "component")
+});
+var $$splitComponentImporter$6 = () => import("./about-BEqbwFnG.mjs");
+var Route$6 = createFileRoute("/about")({
+	head: () => ({ meta: [{ title: "About — Fishing: Catchcraft" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$6, "component")
+});
+var $$splitComponentImporter$5 = () => import("./bank-BmpDNuGs.mjs");
+var Route$5 = createFileRoute("/bank")({
+	head: () => ({ meta: [{ title: "On the bank — Catchcraft" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
+});
+var $$splitComponentImporter$4 = () => import("./glossary-CVAOs6yQ.mjs");
+var Route$4 = createFileRoute("/glossary")({
+	head: () => ({ meta: [{ title: "Glossary — Fishing: Catchcraft" }] }),
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+});
+var $$splitComponentImporter$3 = () => import("./kit-BS24SLTa.mjs");
+var Route$3 = createFileRoute("/kit")({
+	head: () => ({ meta: [{ title: "Field kit — Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./bank-D3_D8Vtc.mjs");
-var Route$2 = createFileRoute("/bank")({
-	head: () => ({ meta: [{ title: "On the bank — Catchcraft" }] }),
+var $$splitComponentImporter$2 = () => import("./safe-DwA0gqWB.mjs");
+var Route$2 = createFileRoute("/safe")({
+	head: () => ({ meta: [{ title: "Stay safe on the water — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./kit-Gh0nBAoF.mjs");
-var Route$1 = createFileRoute("/kit")({
-	head: () => ({ meta: [{ title: "Field kit — Catchcraft" }] }),
+var $$splitComponentImporter$1 = () => import("./start-BVxB2Enc.mjs");
+var Route$1 = createFileRoute("/start")({
+	head: () => ({ meta: [{ title: "Start here — Fishing: Catchcraft" }] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("../_methodId-B4KZCt3t.mjs");
+var $$splitComponentImporter = () => import("../_methodId-Dgah0fBf.mjs");
 var Route = createFileRoute("/methods/$methodId")({
 	head: ({ params }) => {
 		const method = getMethod(params.methodId);
@@ -524,28 +592,48 @@ var Route = createFileRoute("/methods/$methodId")({
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
 var rootRouteChildren = {
-	IndexRoute: Route$3.update({
+	IndexRoute: Route$7.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$8
 	}),
-	BankRoute: Route$2.update({
+	AboutRoute: Route$6.update({
+		id: "/about",
+		path: "/about",
+		getParentRoute: () => Route$8
+	}),
+	BankRoute: Route$5.update({
 		id: "/bank",
 		path: "/bank",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$8
 	}),
-	KitRoute: Route$1.update({
+	GlossaryRoute: Route$4.update({
+		id: "/glossary",
+		path: "/glossary",
+		getParentRoute: () => Route$8
+	}),
+	KitRoute: Route$3.update({
 		id: "/kit",
 		path: "/kit",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$8
+	}),
+	SafeRoute: Route$2.update({
+		id: "/safe",
+		path: "/safe",
+		getParentRoute: () => Route$8
+	}),
+	StartRoute: Route$1.update({
+		id: "/start",
+		path: "/start",
+		getParentRoute: () => Route$8
 	}),
 	MethodsMethodIdRoute: Route.update({
 		id: "/methods/$methodId",
 		path: "/methods/$methodId",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$8
 	})
 };
-var routeTree = Route$4._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$8._addFileChildren(rootRouteChildren)._addFileTypes();
 var router_exports = /* @__PURE__ */ __exportAll({ getRouter: () => getRouter });
 function getRouter() {
 	return createRouter({

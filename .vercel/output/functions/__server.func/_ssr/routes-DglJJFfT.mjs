@@ -1,9 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { a as filterTags, d as methods, i as families } from "./guide-DjaGFKW7.mjs";
+import { a as filterTags, d as methods, i as families } from "./guide-vuM60l-L.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as ArrowRight } from "../_libs/lucide-react.mjs";
 import { i as btn, n as LawNote, r as Plate } from "./bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-ZCAOM26U.js
+import { n as VolumeNote, t as KeepingBox } from "./notes-D6FbLOI8.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DglJJFfT.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Home() {
@@ -26,23 +27,39 @@ function Home() {
 							children: "Catch a fish with what the bank has."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-3 max-w-xl font-display text-lg text-river",
+							children: "The Education Revolution Pocket Guide, Volume 23: Fishing"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-1 text-sm font-semibold text-ink/80",
+							children: "by Blue and the Awesome Dudes"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-4 max-w-xl text-lg text-ink/80",
 							children: "Handmade traps for fish that follow a scent. Corrals that borrow a creek or a tide. And the hook — still the surest way to a meal when you can stay and watch."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-6 flex flex-wrap gap-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
-								to: "/bank",
-								className: btn,
-								children: ["I'm on the bank", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
-									className: "size-4",
-									"aria-hidden": "true"
-								})]
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "#traps",
-								className: "inline-flex min-h-11 items-center font-semibold text-river",
-								children: "Start with traps"
-							})]
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+									to: "/bank",
+									className: btn,
+									children: ["I'm on the bank", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, {
+										className: "size-4",
+										"aria-hidden": "true"
+									})]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+									to: "/start",
+									className: "inline-flex min-h-11 items-center font-semibold text-river",
+									children: "Start here"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+									to: "/safe",
+									className: "inline-flex min-h-11 items-center font-semibold text-river",
+									children: "Stay safe"
+								})
+							]
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Plate, {
@@ -51,9 +68,19 @@ function Home() {
 					alt: "A misty riverbank at sunrise with a cane pole, a coil of rope, and a plastic bottle at the water's edge."
 				})]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 				className: "mx-auto max-w-5xl px-5 pb-6",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Traps, weirs, and corrals are illegal in a lot of water. Where they are allowed they usually must be tagged and checked on a schedule. A hook and line is what most places actually permit. Read the rule for the water you're standing on before you build anything." })
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(LawNote, { children: "Get a fishing license for the state or place you are in, and read that water's rules before you fish. Traps, weirs, and corrals are illegal in a lot of water. Where they are allowed they usually must be tagged and checked on a schedule. A hook and line is what most places actually permit. Seasons, size limits, bag limits, and bait bans still apply. If you are unsure, do not build a trap — fish a legal hook instead." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-4",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(KeepingBox, {})
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mt-4",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(VolumeNote, {})
+					})
+				]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 				className: "mx-auto grid max-w-5xl gap-3 px-5 pb-8 sm:grid-cols-3",

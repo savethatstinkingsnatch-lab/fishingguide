@@ -3,11 +3,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { families, filterTags, methods, type Tag } from "@/data/guide";
 import { btn, LawNote, Plate } from "@/components/bits";
+import { KeepingBox, VolumeNote } from "@/components/notes";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Catchcraft — traps, corrals, and the hook" },
+      { title: "Fishing: Catchcraft" },
       {
         name: "description",
         content:
@@ -30,6 +31,10 @@ function Home() {
           <h1 className="mt-2 font-display text-4xl text-ink md:text-6xl">
             Catch a fish with what the bank has.
           </h1>
+          <p className="mt-3 max-w-xl font-display text-lg text-river">
+            The Education Revolution Pocket Guide, Volume 23: Fishing
+          </p>
+          <p className="mt-1 text-sm font-semibold text-ink/80">by Blue and the Awesome Dudes</p>
           <p className="mt-4 max-w-xl text-lg text-ink/80">
             Handmade traps for fish that follow a scent. Corrals that borrow a creek or a tide.
             And the hook — still the surest way to a meal when you can stay and watch.
@@ -39,9 +44,12 @@ function Home() {
               I'm on the bank
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
-            <a href="#traps" className="inline-flex min-h-11 items-center font-semibold text-river">
-              Start with traps
-            </a>
+            <Link to="/start" className="inline-flex min-h-11 items-center font-semibold text-river">
+              Start here
+            </Link>
+            <Link to="/safe" className="inline-flex min-h-11 items-center font-semibold text-river">
+              Stay safe
+            </Link>
           </div>
         </div>
         <Plate
@@ -53,10 +61,18 @@ function Home() {
 
       <section className="mx-auto max-w-5xl px-5 pb-6">
         <LawNote>
-          Traps, weirs, and corrals are illegal in a lot of water. Where they are allowed they
-          usually must be tagged and checked on a schedule. A hook and line is what most places
-          actually permit. Read the rule for the water you're standing on before you build anything.
+          Get a fishing license for the state or place you are in, and read that water's rules
+          before you fish. Traps, weirs, and corrals are illegal in a lot of water. Where they are
+          allowed they usually must be tagged and checked on a schedule. A hook and line is what
+          most places actually permit. Seasons, size limits, bag limits, and bait bans still
+          apply. If you are unsure, do not build a trap — fish a legal hook instead.
         </LawNote>
+        <div className="mt-4">
+          <KeepingBox />
+        </div>
+        <div className="mt-4">
+          <VolumeNote />
+        </div>
       </section>
 
       <section className="mx-auto grid max-w-5xl gap-3 px-5 pb-8 sm:grid-cols-3">

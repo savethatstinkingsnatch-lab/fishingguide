@@ -1,10 +1,10 @@
 import { i as __toESM } from "./_runtime.mjs";
-import { c as lies, d as methods, l as materialById, n as clinch, o as getMethod, r as depths, t as baits } from "./_ssr/guide-DjaGFKW7.mjs";
+import { c as lies, d as methods, l as materialById, n as clinch, o as getMethod, r as depths, t as baits } from "./_ssr/guide-vuM60l-L.mjs";
 import { J as require_react, S as require_jsx_runtime, b as Link } from "./_libs/@tanstack/react-router+[...].mjs";
 import { i as ArrowLeft, r as ArrowRight } from "./_libs/lucide-react.mjs";
-import { n as Route, r as useField } from "./_ssr/router-C2HYKw_s.mjs";
+import { n as Route, r as useField } from "./_ssr/router-1SfIilET.mjs";
 import { a as btnGhost, i as btn, n as LawNote, r as Plate, t as CheckRow } from "./_ssr/bits-C1ciQPO1.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_methodId-B4KZCt3t.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_methodId-Dgah0fBf.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function HookStudio() {
