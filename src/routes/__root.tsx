@@ -4,7 +4,7 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { Shell } from "@/components/shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Fishing: Catchcraft";
+const APP_NAME = "Volume 23: Fishing (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -15,7 +15,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "A field guide to handmade fish traps, corrals, and fishing with a hook and bait.",
+          "Volume 23 of The Education Revolution, by Blue and the Awesome Dudes. A field guide to handmade fish traps, corrals, and fishing with a hook and bait.",
       },
       { name: "theme-color", content: "#1b4540" },
     ],
